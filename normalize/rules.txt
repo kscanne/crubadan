@@ -1,0 +1,266 @@
+# first, many Latin languages should normalize generic interior apostrophes
+LANG en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,om,sco
+# U+0060, U+00B4, U+2018, U+2019, U+02BC (last common in Oromo corpus)
+s/(\p{Latin})[`´’‘ʼ](\p{Latin})/$1'$2/
+
+LANG af
+s/(^|\P{Letter})[’‘´`ʼ]n/$1'n/
+s/ŉ/'n/
+
+LANG agu
+s/(\p{Letter})’/$1\x{A78C}/
+s/\x{F21D}/\x{A78C}/  # private use char for Saltillo
+
+LANG ak
+URL alhafeez.org
+s/x/ɔ/
+s/X/Ɔ/
+s/z/ɛ/
+s/Z/Ɛ/
+
+LANG ak,din,dip,kbp,maw,tw
+s/Ԑ/Ɛ/  # replace 0510 Cyrillic with correct 0190
+s/ᴇ/ɛ/  # replace 1D07 with correct 025B
+s/ε/ɛ/  # replace 03B5 with correct 025B
+s/έ/ɛ́/   # replace precomposed Greek 03AD with correct 025B+0301
+s/כ/ɔ/   # replace 05DB with correct 0254
+s/נ/ɔ/   # replace 05E0 with correct 0254
+s/ↄ/ɔ/   # replace 2184 with correct 0254
+s/Ↄ/Ɔ/   # replace 2183 with correct 0186
+s/し/Ɩ/  # Hiragana 3057 is used as fake capital iota 0196
+
+LANG az,azj
+s/ә/ə/           # replace Cyrillic 04D9 with 0259
+
+LANG ba
+s/ë/ё/           # replace Latin 00EB with Cyrillic 0451
+
+LANG br,br-x-falhuneg,br-x-unified
+# sadly, apostrophe 2018 ‘ is not uncommon in addition to ’ 2019 
+# usually as a leading apost, rarely as a‘, etc.
+# in principle, interior aposts just between c and h, but 
+# common enough in other contexts in corpus
+s/(\p{Letter})[‘’`](\p{Letter})/$1'$2/
+s/(^|\P{Letter})[’‘`]([mnzr]|[pnmvz]o|[bort]a|vel|vit|vez|benn|[mnp]eus|barzh|met|pad|vefe|[nmd]oa|blam|giz)(\P{Letter}|$)/$1'$2$3/i
+
+LANG bsn
+s/ð/ĩ/  # font tricks in Bible PDF :(
+s/ù/ʉ/
+s/ý/ʉ̃/  # there's a tilde 0303 here, can't see in vim
+s/Ø/Ʉ/
+s/ß/ẽ/
+s/ø/ũ/
+s/Ð/Ĩ/
+
+LANG bua,mn
+# һ is Buryad only
+tr/ЄЇЋєїћ/ӨҮҺөүһ/
+s/γ/ү/  # replace Grek 03B3 with Cyrillic 04AF
+s/ʏ/ү/  # replace Latn 028F with Cyrillic 04AF
+tr/Ɵɵ/Өө/  # Latin 019F,0275 should be 04E8/04E9
+tr/Θθ/Өө/  # replace Grek 0398,03B8 thetas
+tr/Ѳѳ/Өө/  # Cyrillic 0472,0473 should be 04E8/04E9
+s/(\p{Cyrillic})oo/$1өө/   # Latin double-o is always өө 
+s/oo(\p{Cyrillic})/өө$1/
+s/(\p{Cyrillic})yy/$1үү/   # Latin double-y is always үү 
+s/yy(\p{Cyrillic})/үү$1/
+s/(\p{Cyrillic})YY/$1ҮҮ/   # Latin double-y is always үү 
+s/YY(\p{Cyrillic})/ҮҮ$1/
+s/(\p{Cyrillic})h(\P{Latin}|$)/$1һ$2/
+s/(^|\P{Latin})h(\p{Cyrillic})/$1һ$2/
+s/(\p{Cyrillic})[vy](\P{Latin}|$)/$1ү$2/
+s/(^|\P{Latin})[vy](\p{Cyrillic})/$1ү$2/
+s/(\p{Cyrillic})Y(\P{Latin}|$)/$1Ү$2/
+s/(^|\P{Latin})Y(\p{Cyrillic})/$1Ү$2/
+s/(\p{Cyrillic})[eoøö](\P{Latin}|$)/$1ө$2/
+s/(^|\P{Latin})[eoøö](\p{Cyrillic})/$1ө$2/
+s/(\p{Cyrillic})[ØÖ](\P{Latin}|$)/$1Ө$2/
+s/(^|\P{Latin})[ØÖ](\p{Cyrillic})/$1Ө$2/
+# more generic Latin for Cyrillic substitutions
+s/(\p{Cyrillic})a(\P{Latin}|$)/$1а$2/
+s/(^|\P{Latin})a(\p{Cyrillic})/$1а$2/
+s/(\p{Cyrillic})c(\P{Latin}|$)/$1с$2/
+s/(^|\P{Latin})c(\p{Cyrillic})/$1с$2/
+s/(\p{Cyrillic})e(\P{Latin}|$)/$1е$2/
+s/(^|\P{Latin})e(\p{Cyrillic})/$1е$2/
+s/(\p{Cyrillic})k(\P{Latin}|$)/$1к$2/
+s/(^|\P{Latin})k(\p{Cyrillic})/$1к$2/
+s/(\p{Cyrillic})M(\P{Latin}|$)/$1М$2/
+s/(^|\P{Latin})M(\p{Cyrillic})/$1М$2/
+s/(\p{Cyrillic})p(\P{Latin}|$)/$1р$2/
+s/(^|\P{Latin})p(\p{Cyrillic})/$1р$2/
+s/(\p{Cyrillic})x(\P{Latin}|$)/$1х$2/
+s/(^|\P{Latin})x(\p{Cyrillic})/$1х$2/
+
+LANG ca
+# see emails w/ Toni, Jaume, Joan in July 2013
+s/L\.L/L·L/
+s/L•L/L·L/
+s/l\.l/l·l/
+s/l•l/l·l/
+s/(\p{Latin})’(\p{Latin})/$1'$2/
+
+LANG ce
+s/[1I](\p{Cyrillic})/Ӏ$1/  # ASCII I -> 04C0
+s/(\p{Cyrillic})[1I]/$1Ӏ/
+s/ý/у́/         # Latin 00FD should be Cyrillic 0443+0301
+
+LANG chm,koi,kpv,kv,mhr,udm
+s/ÿ/ӱ/  # replace 00FF with Cyrillic 04F1
+s/ä/ӓ/  # replace 00E4 with Cyrillic 04D3
+s/ö/ӧ/  # replace 00F6 with Cyrillic 04E7
+s/ő/ӧ/  # replace 0151 (dbl acute) with Cyrillic 04E7
+s/τ/т/  # replace 03C4 with Cyrillic 0442
+s/ο/о/  # replace 03BF with Cyrillic 043E
+s/Ö/Ӧ/  # replace 00D6 with Cyrillic 04E6
+s/Ő/Ӧ/  # replace 0150 (dbl acute) with Cyrillic 04E6
+s/ă/ӑ/  # replace Latin 0103 with Cyrillic 04D1
+
+LANG ctu
+s/Λ/Ʌ/  # replace Grek 039B with 0245
+
+LANG cv
+s/ă/ӑ/  # replace Latn 0103 with Cyrl 04D1
+s/Ă/Ӑ/  # replace Latn 0102 with Cyrl 04D0
+s/ç/ҫ/  # replace Latn 00E7 with Cyrl 04AB
+s/Ç/Ҫ/  # replace Latn 00C7 with Cyrl 04AA
+s/ĕ/ӗ/  # replace Latn 0115 with Cyrl 04D7
+s/ě/ӗ/  # replace Latn 011B with Cyrl 04D7
+s/Ĕ/Ӗ/  # replace Latn 0114 with Cyrl 04D6
+s/Ě/Ӗ/  # replace Latn 011A with Cyrl 04D6
+
+LANG cy,ny,tum,yao
+s/´/'/    # latin-1 acute accent sometimes used as apost
+s/w\^/ŵ/
+s/W\^/Ŵ/
+s/y\^/ŷ/
+s/Y\^/Ŷ/
+
+LANG dlc
+s/\x{02DB}/\x{0328}/   # "ogonek" with "combining ogonek" (via Yair)
+
+LANG dua
+s/\x{0331}/\x{0332}/  # combining macro below -> combining low line
+
+LANG dyo
+URL inter-reseaux.org
+s/à/á/
+# é is OK
+s/î/í/
+s/œ/ó/
+s/ù/ú/
+s/ø/Á/
+s/Ù/Ú/
+s/x/ñ/
+s/X/Ñ/
+s/z/ŋ/
+s/Z/Ŋ/
+s/∞/ʔ/
+
+LANG ga
+s/[\x{FFFF}\x{FFFE}\x{FEFF}]//
+s/([BbDdMmSs])’([AEIOUaeiouÁÉÍÓÚáéíóú])/$1'$2/
+URL listserv.heanet.ie
+s/A\//Á/
+s/E\//É/
+s/I\//Í/
+s/O\//Ó/
+s/U\//Ú/
+s/a\//á/
+s/e\//é/
+s/i\//í/
+s/o\//ó/
+s/u\//ú/
+
+LANG gd
+# sadly, apostrophe 2018 ‘ is not uncommon in addition to ’ 2019 
+# usually as a leading apost, rarely as a‘, etc.
+s/(\p{Letter})[‘’`](\p{Letter})/$1'$2/
+s/(^|\P{Letter})[’‘`]([snmgr]|na[nmr]?|eil|ga|san?|us|an|ur)(\P{Letter}|$)/$1'$2$3/i
+s/(^|\P{Letter})([abdmt]|[bdt]h|ars|sa|cuimhn|bliadhn|oidhch)[’`](\P{Letter}|$)/$1$2'$3/i
+
+LANG gv
+s/(\p{Letter})[‘’`](\p{Letter})/$1'$2/
+s/(^|\P{Letter})[’‘`]([mns]|ad|aigney|ayns?|e[ehr]|eailley|gheddyn|gholl|leayr|leih|mie|neen|ockle|o[iu]|raad|red|syn?|ve|yannoo)(\P{Letter}|$)/$1'$2$3/i
+
+LANG haw,mh,mi,sm,tkl,to,tvl,ty
+tr/äëïöüÄËÏÖÜ/āēīōūĀĒĪŌŪ/
+tr/âêîôûÂÊÎÔÛ/āēīōūĀĒĪŌŪ/
+#tr/ǎěǐǒǔǍĚǏǑǓ/āēīōūĀĒĪŌŪ/   # Keitapu: keep these
+tr/ãõÃÕ/āōĀŌ/
+s/[ÿ'`‘’]/ʻ/
+
+LANG mda
+s/ε/ɛ/  # replace 03B5 with correct 025B
+
+LANG mh
+s/ň/ñ/
+
+LANG nso,tn
+s/[ßπœŝ]/š/     # various things to small s with caron
+s/[ˇŒ]/Š/       # various things to small s with caron
+
+LANG os,os-x-dig
+s/æ/ӕ/  # convert 00E6 Latin to Cyrl 04D5
+s/Æ/Ӕ/  # convert 00C6 Latin to Cyrl 04D4
+
+LANG ro
+s/ţ/ț/
+s/ş/ș/
+s/Ţ/Ț/
+s/Ş/Ș/
+
+LANG rw
+s/(\p{Latin})’(\p{Latin})/$1'$2/
+s/([knwy])’([0-9])/$1'$2/
+# Jackson says no space after apost in these cases
+# (others too, these are most frequent)
+s/ ([bknwyz]|bw|by|cy|kw|nk|rw|ry)['’] (\p{Latin})/ $1'$2/
+# w' 2010 => w'2010
+s/ ([nwyz])['’] ([0-9])/ $1'$2/
+
+LANG sq
+s/(\P{Letter}|^)([çÇsStTmM])’(\p{Letter})/$1$2'$3/
+
+LANG str
+s/Ќ/Ḱ/  # Cyrillic 040C maps to correct Latin 1E30 
+
+LANG tgp
+s/ß/R̃/  # bad font for r's with tildes (combining 0303)
+s/ÿ/r̃/
+
+LANG trc
+s/Ѷ/ꞌ/  # one bad PDF
+
+LANG tsz
+s/ο/o/   # Greek 03BF to plain ASCII o
+s/η/ŋ/   # maps Greek 03B7 to Latin 014B
+
+LANG wo
+URL worldbank
+s/ˆ/à/
+s/Ž/é/
+s/‘/ë/
+s/–/ñ/
+s/„/Ñ/
+s/—/ó/
+s/ƒ/É/
+s/è/Ë/
+
+LANG xal
+# from Jargal, 26 Sept 2013
+tr/ієљњґўІЄЉЊҐЎ/әһҗңөүӘҺҖҢӨҮ/
+# some private use codes in one PDF
+# http://www.ciemen.org/mercator/pdf/osce-oslo-kl.pdf
+s/\x{F08D}/Ә/  # capital Cyrillic schwa 04D8
+s/\x{F09D}/ә/  # small Cyrillic schwa 04D9
+s/\x{F080}/Җ/  # capital zhe w/ descender 0497
+s/\x{F090}/җ/  # small zhe w/ descender 0497
+s/\x{F081}/Ң/  # capital en w/ descender 04A3
+s/ƒ/ң/  # small en w/ descender 04A3
+s/Š/Ү/  # capital letter straight u, 04AE
+s/š/ү/  # small letter straight u, 04AF
+s/Œ/Һ/  # capital letter shha
+s/œ/һ/  # small letter shha
+s/(\p{Cyrillic})h(\P{Latin})/$1һ$2/  # small letter shha
+s/(\P{Latin})h(\p{Cyrillic})/$1һ$2/  # small letter shha

@@ -1,0 +1,6 @@
+TEST ga listserv.heanet.ie
+Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST ga twitter.com
+Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST ga-x-slais listserv.heanet.ie
+Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
