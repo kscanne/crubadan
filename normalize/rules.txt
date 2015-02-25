@@ -1,7 +1,7 @@
 # first, many Latin languages should normalize generic interior apostrophes
 # U+0060, U+00B4, U+2018, U+2019, U+02BC (last common in Oromo corpus)
 LANG br,br-x-falhuneg,br-x-unified,ca,en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,gd,gv,om,rw,sco
-s/(\p{Latin})[`´’‘ʼ](\p{Latin})/$1'$2/
+s/(?<=\p{Latin})[`´’‘ʼ](?=\p{Latin})/'/
 
 LANG af
 s/(^|\P{Letter})[’‘´`ʼ]n/$1'n/
@@ -36,7 +36,9 @@ LANG ba
 s/ë/ё/           # replace Latin 00EB with Cyrillic 0451
 
 LANG br,br-x-falhuneg,br-x-unified
-s/(^|\P{Letter})[’‘`]([mnzr]|[pnmvz]o|[bort]a|vel|vit|vez|benn|[mnp]eus|barzh|met|pad|vefe|[nmd]oa|blam|giz)(\P{Letter}|$)/$1'$2$3/i
+s/(?<=\P{Letter})[’‘`]([mnzr]|[pnmvz]o|[bort]a|vel|vit|vez|benn|[mnp]eus|barzh|met|pad|vefe|[nmd]oa|blam|giz)(?=\P{Letter})/'$1/i
+s/(?<=\P{Letter})[’‘`]([mnzr]|[pnmvz]o|[bort]a|vel|vit|vez|benn|[mnp]eus|barzh|met|pad|vefe|[nmd]oa|blam|giz)$/'$1/i
+s/^[’‘`]([mnzr]|[pnmvz]o|[bort]a|vel|vit|vez|benn|[mnp]eus|barzh|met|pad|vefe|[nmd]oa|blam|giz)(?=\P{Letter})/'$1/i
 
 LANG bsn
 s/ð/ĩ/  # font tricks in Bible PDF :(
@@ -211,7 +213,8 @@ s/ ([bknwyz]|bw|by|cy|kw|nk|rw|ry)['’] (\p{Latin})/ $1'$2/
 s/ ([nwyz])['’] ([0-9])/ $1'$2/
 
 LANG sq
-s/(\P{Letter}|^)([çÇsStTmM])’(\p{Letter})/$1$2'$3/
+s/(?<=\P{Letter})([çÇsStTmM])’(?=\p{Letter})/$1'/
+s/^([çÇsStTmM])’(?=\p{Letter})/$1'/
 
 LANG str
 s/Ќ/Ḱ/  # Cyrillic 040C maps to correct Latin 1E30 
