@@ -1,11 +1,3 @@
-TEST ga listserv.heanet.ie
-Tá mé i mo chónaí i Meiriceá. Slais/eanna m/ichearta?
-TEST ga twitter.com
-Ta/ me/ i mo cho/nai/ i Meiricea/. Slais/eanna m/ichearta?
-TEST ga-x-slais listserv.heanet.ie
-Ta/ me/ i mo cho/nai/ i Meiricea/. Slais/eanna m/ichearta?
-TEST en borel.slu.edu
-‘I shouldn't have to tell you that.’
 TEST af borel.slu.edu
 Sielsruimte is die atmosfeer wat vrygestel word as gevolg van 'n gesindheid van versoening en vergifnis.
 Sielsruimte is die atmosfeer wat vrygestel word as gevolg van 'n gesindheid van versoening en vergifnis.
@@ -16,15 +8,32 @@ TEST ak borel.slu.edu
 Zoom-x - Ɛyɛ me ahomekasɛ me neworekyɛsaaamaneɛbɔyi fa wo ba no nkankorɔ ho wɔ sɛ
 TEST az borel.slu.edu
 Sezgi, duyğu, müşahidə, təəssürat və lirizmə önəm vermişdir.
+TEST br borel.slu.edu
+Pa'c'h eus ganet ur mab d'e dadi
+skrivet diwar-benn Argantael. Pell 'zo 'm eus e lennet
 TEST ca borel.slu.edu
 UN LICOR D'ALTA GRADUACIÓ + EL PARAL·LEL 1894-1939
 UN LICOR D'ALTA GRADUACIÓ + EL PARAL·LEL 1894-1939
 Aquesta mossa, intel·ligent, i amb sentit de l'humor
 Aquesta mossa, intel·ligent, i amb sentit de l'humor
+TEST ctu www.jw.org
+TSAʼIX BɅ QʼUEJLI
+TEST en borel.slu.edu
+‘I shouldn't have to tell you that.’
+TEST ga listserv.heanet.ie
+Tá mé i mo chónaí i Meiriceá. Slais/eanna m/ichearta?
+TEST ga twitter.com
+Ta/ me/ i mo cho/nai/ i Meiricea/. Slais/eanna m/ichearta?
+TEST ga-x-slais listserv.heanet.ie
+Ta/ me/ i mo cho/nai/ i Meiricea/. Slais/eanna m/ichearta?
+TEST haw twitter.com
+RT @BMACouncil: ʻŌlelo noʻeau
 TEST om oromianeconomist.wordpress.com
 ‘akka ta'e Artsitoonni leenjii dhuma sa'a'rra tti dubbatanii jiru.’
 TEST ro ro.wikipedia.org
 Iată câțiva în înșiruirea de mai jos:
+TEST sm twitter.com
+@ElenaMyself Manuia le po sissy ... ʻAua le soʻoga lue :p xoxox
 TEST sq sq.wikipedia.org
 ”Merri !”- urdhëroi gardiani. Ç't'i bësh
 Uhh… ç'm'u desh që e lexova – thash me vete… Ç'dilemë
