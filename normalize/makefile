@@ -7,3 +7,6 @@ crubtest: FORCE langs.txt
 	cat langs.txt | while read x; do echo "$x..."; retrofix -t $x; done
 
 FORCE:
+
+clean:
+	rm -f langs.txt test-out-new.txt
