@@ -35,8 +35,8 @@ while (<RULES>) {
 	}
 	else {
 		if ($ok) {
-			s/^(s\/.+\/)$/$1g;/;  # default is global substitution
-			$code .= $_;
+			s/^(s\/.+\/i?)$/$1g/;  # default is global substitution
+			$code .= "$_; ";
 		}
 	}
 }
