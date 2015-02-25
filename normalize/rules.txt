@@ -1,6 +1,6 @@
 # first, many Latin languages should normalize generic interior apostrophes
-LANG en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,om,sco
 # U+0060, U+00B4, U+2018, U+2019, U+02BC (last common in Oromo corpus)
+LANG br,br-x-falhuneg,br-x-unified,ca,en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,gd,gv,om,rw,sco
 s/(\p{Latin})[`´’‘ʼ](\p{Latin})/$1'$2/
 
 LANG af
@@ -36,11 +36,6 @@ LANG ba
 s/ë/ё/           # replace Latin 00EB with Cyrillic 0451
 
 LANG br,br-x-falhuneg,br-x-unified
-# sadly, apostrophe 2018 ‘ is not uncommon in addition to ’ 2019 
-# usually as a leading apost, rarely as a‘, etc.
-# in principle, interior aposts just between c and h, but 
-# common enough in other contexts in corpus
-s/(\p{Letter})[‘’`](\p{Letter})/$1'$2/
 s/(^|\P{Letter})[’‘`]([mnzr]|[pnmvz]o|[bort]a|vel|vit|vez|benn|[mnp]eus|barzh|met|pad|vefe|[nmd]oa|blam|giz)(\P{Letter}|$)/$1'$2$3/i
 
 LANG bsn
@@ -98,7 +93,6 @@ s/L\.L/L·L/
 s/L•L/L·L/
 s/l\.l/l·l/
 s/l•l/l·l/
-s/(\p{Latin})’(\p{Latin})/$1'$2/
 
 LANG ce
 s/[1I](\p{Cyrillic})/Ӏ$1/  # ASCII I -> 04C0
@@ -175,12 +169,10 @@ s/u\//ú/
 LANG gd
 # sadly, apostrophe 2018 ‘ is not uncommon in addition to ’ 2019 
 # usually as a leading apost, rarely as a‘, etc.
-s/(\p{Letter})[‘’`](\p{Letter})/$1'$2/
 s/(^|\P{Letter})[’‘`]([snmgr]|na[nmr]?|eil|ga|san?|us|an|ur)(\P{Letter}|$)/$1'$2$3/i
 s/(^|\P{Letter})([abdmt]|[bdt]h|ars|sa|cuimhn|bliadhn|oidhch)[’`](\P{Letter}|$)/$1$2'$3/i
 
 LANG gv
-s/(\p{Letter})[‘’`](\p{Letter})/$1'$2/
 s/(^|\P{Letter})[’‘`]([mns]|ad|aigney|ayns?|e[ehr]|eailley|gheddyn|gholl|leayr|leih|mie|neen|ockle|o[iu]|raad|red|syn?|ve|yannoo)(\P{Letter}|$)/$1'$2$3/i
 
 LANG haw,mh,mi,sm,tkl,to,tvl,ty
@@ -211,7 +203,6 @@ s/Ţ/Ț/
 s/Ş/Ș/
 
 LANG rw
-s/(\p{Latin})’(\p{Latin})/$1'$2/
 s/([knwy])’([0-9])/$1'$2/
 # Jackson says no space after apost in these cases
 # (others too, these are most frequent)
