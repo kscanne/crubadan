@@ -1,0 +1,21 @@
+This repository contains scripts and data from the Crúbadán project;
+http://crubadan.org/
+
+
+*** Normalization ***
+
+In the "normalize" directory, you'll find the script that we apply
+to web-crawled texts in various languages to clean them up.  
+In general, we only perform very "gentle" cleaning, in order
+to make the texts more useful for language-modeling and so on. 
+
+As an example: in some Cyrillic-script languages, it's common for
+users to type a "lookalike" Latin script character for what ought to be
+a Cyrillic one; e.g.  Latin "ö" (U+00F6) for Cyrillic "ӧ" 04E7.
+Our script converts U+00F6 to U+04E7 for languages where this is an 
+issue (Komi, Udmurt, ...) 
+
+The rules are expressed as Perl substitutions, and can be 
+found in the file rules.txt.  We welcome contributions from
+additional language communities.  The ruleset at present only
+covers a fraction of the 2000+ languages our crawler recognizes.
