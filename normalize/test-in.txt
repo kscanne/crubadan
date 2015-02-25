@@ -1,11 +1,3 @@
-TEST ga listserv.heanet.ie
-Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
-TEST ga twitter.com
-Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
-TEST ga-x-slais listserv.heanet.ie
-Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
-TEST en borel.slu.edu
-‘I shouldn’t have to tell you that.’
 TEST af borel.slu.edu
 Sielsruimte is die atmosfeer wat vrygestel word as gevolg van ʼn gesindheid van versoening en vergifnis.
 Sielsruimte is die atmosfeer wat vrygestel word as gevolg van ‘n gesindheid van versoening en vergifnis.
@@ -16,8 +8,34 @@ TEST ak borel.slu.edu
 Zoom-x - Ɛyε me ahomekasε me neworekyεsaaamaneεbכyi fa wo ba no nkankorכ ho wכ sε
 TEST az borel.slu.edu
 Sezgi, duyğu, müşahidә, tәәssürat vә lirizmә önәm vermişdir.
+TEST br borel.slu.edu
+Pa’c’h eus ganet ur mab d’e dadi
+skrivet diwar-benn Argantael.  Pell ’zo ‘m eus e lennet
 TEST ca borel.slu.edu
 UN LICOR D'ALTA GRADUACIÓ + EL  PARAL•LEL 1894-1939 
 UN LICOR D'ALTA GRADUACIÓ + EL  PARAL.LEL 1894-1939 
 Aquesta mossa, intel•ligent, i amb sentit de l’humor
 Aquesta mossa, intel.ligent, i amb sentit de l’humor
+TEST en borel.slu.edu
+‘I shouldn’t have to tell you that.’
+TEST ga listserv.heanet.ie
+Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST ga twitter.com
+Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST ga-x-slais listserv.heanet.ie
+Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST om oromianeconomist.wordpress.com
+‘akka ta’e Artsitoonni leenjii dhuma sa’a’rra tti dubbatanii jiru.’
+TEST ro ro.wikipedia.org
+Iată câţiva în înşiruirea de mai jos:
+TEST sq sq.wikipedia.org
+”Merri !”- urdhëroi gardiani.  Ç’t’i bësh
+Uhh… ç’m’u desh që e lexova – thash me vete… Ç’dilemë
+TEST tn www.education.gov.za
+magareng ga ditßhaba tßa lefase
+TEST tsz borel.slu.edu
+imeri k'umanchikuarhu o imeri ambe axatsοperakuarhunijtu chureηani
+TEST udm wikipedia.org
+Тонтэк уйёсы салкымесь, Тонтэк мöзмон
+TEST xal twitter.com
+Ода би Монhл улснд бяяняв.
