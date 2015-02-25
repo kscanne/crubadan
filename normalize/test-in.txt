@@ -4,3 +4,20 @@ TEST ga twitter.com
 Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
 TEST ga-x-slais listserv.heanet.ie
 Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST en borel.slu.edu
+‘I shouldn’t have to tell you that.’
+TEST af borel.slu.edu
+Sielsruimte is die atmosfeer wat vrygestel word as gevolg van ʼn gesindheid van versoening en vergifnis.
+Sielsruimte is die atmosfeer wat vrygestel word as gevolg van ‘n gesindheid van versoening en vergifnis.
+Sielsruimte is die atmosfeer wat vrygestel word as gevolg van ŉ gesindheid van versoening en vergifnis.
+TEST ak alhafeez.org
+Me de zho nyinkyerz akyerz amanfoxkakra bi na wxn gye me fz so.
+TEST ak borel.slu.edu
+Zoom-x - Ɛyε me ahomekasε me neworekyεsaaamaneεbכyi fa wo ba no nkankorכ ho wכ sε
+TEST az borel.slu.edu
+Sezgi, duyğu, müşahidә, tәәssürat vә lirizmә önәm vermişdir.
+TEST ca borel.slu.edu
+UN LICOR D'ALTA GRADUACIÓ + EL  PARAL•LEL 1894-1939 
+UN LICOR D'ALTA GRADUACIÓ + EL  PARAL.LEL 1894-1939 
+Aquesta mossa, intel•ligent, i amb sentit de l’humor
+Aquesta mossa, intel.ligent, i amb sentit de l’humor
