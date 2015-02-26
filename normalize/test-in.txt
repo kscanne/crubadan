@@ -34,10 +34,16 @@ Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
 chlaon sé a chluas chugam agus d’éist le m’éamh
 TEST ga-x-slais listserv.heanet.ie
 Ta/ me/ i mo cho/nai/ i Meiricea/.  Slais/eanna m/ichearta?
+TEST gd twitter.com
+Tha sinn a’ tighinn do na h-Eileanan Siar
 TEST haw twitter.com
 RT @BMACouncil: ‘Ōlelo no‘eau
 TEST koi wikipedia.org
 шуöны Верх Юсьва
+TEST mi twitter.com
+Kai te haere mãtau ki te whare  kiriata, mãtakitaki atu i te kiriata
+TEST mn borel.slu.edu
+гэгчийн бeмбeлeг дотор л амьдарсаар
 TEST om oromianeconomist.wordpress.com
 ‘akka ta’e Artsitoonni leenjii dhuma sa’a’rra tti dubbatanii jiru.’
 TEST ro ro.wikipedia.org
