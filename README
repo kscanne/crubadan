@@ -15,7 +15,14 @@ a Cyrillic one; e.g.  Latin "ö" (U+00F6) for Cyrillic "ӧ" 04E7.
 Our script converts U+00F6 to U+04E7 for languages where this is an 
 issue (Komi, Udmurt, ...) 
 
+In contrast, we wouldn't attempt to restore missing diacritics or 
+any other cleaning that's not deterministic.  
+
 The rules are expressed as Perl substitutions, and can be 
-found in the file rules.txt.  We welcome contributions from
-additional language communities.  The ruleset at present only
-covers a fraction of the 2000+ languages our crawler recognizes.
+found in the file rules.txt.  The script reads UTF-8 text 
+(Normalization form C) on standard input, and sends the 
+normalized text to standard output.
+
+We welcome contributions from additional language communities.  
+The ruleset at present only covers a fraction of the 2000+
+languages our crawler recognizes.
