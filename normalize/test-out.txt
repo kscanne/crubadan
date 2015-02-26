@@ -36,6 +36,8 @@ TEST ga-x-slais listserv.heanet.ie
 Ta/ me/ i mo cho/nai/ i Meiricea/. Slais/eanna m/ichearta?
 TEST gd twitter.com
 Tha sinn a' tighinn do na h-Eileanan Siar
+TEST ha wikipedia.org
+da suka haɗa da 'ya'yanta uku
 TEST haw twitter.com
 RT @BMACouncil: ʻŌlelo noʻeau
 TEST koi wikipedia.org

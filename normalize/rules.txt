@@ -1,6 +1,6 @@
 # first, many Latin languages should normalize generic interior apostrophes
 # U+0060, U+00B4, U+2018, U+2019, U+02BC (last common in Oromo corpus)
-LANG br,br-x-falhuneg,br-x-unified,ca,en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,gd,gv,om,rw,sco
+LANG br,br-x-falhuneg,br-x-unified,ca,en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,gd,gv,ha,om,rw,sco
 s/(?<=\p{Latin})[`´’‘ʼ](?=\p{Latin})/'/
 
 LANG af
@@ -176,6 +176,9 @@ s/(^|\P{Letter})([abdmt]|[bdt]h|ars|sa|cuimhn|bliadhn|oidhch)[’`](\P{Letter}|$
 
 LANG gv
 s/(^|\P{Letter})[’‘`]([mns]|ad|aigney|ayns?|e[ehr]|eailley|gheddyn|gholl|leayr|leih|mie|neen|ockle|o[iu]|raad|red|syn?|ve|yannoo)(\P{Letter}|$)/$1'$2$3/i
+
+LANG ha
+s/(^|\P{Letter})[’‘`]([Yy]a|[Dd]an|ina)/$1'$2/i
 
 LANG haw,mh,mi,sm,tkl,to,tvl,ty
 tr/äëïöüÄËÏÖÜ/āēīōūĀĒĪŌŪ/
