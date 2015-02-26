@@ -182,7 +182,10 @@ tr/äëïöüÄËÏÖÜ/āēīōūĀĒĪŌŪ/
 tr/âêîôûÂÊÎÔÛ/āēīōūĀĒĪŌŪ/
 #tr/ǎěǐǒǔǍĚǏǑǓ/āēīōūĀĒĪŌŪ/   # Keitapu: keep these
 tr/ãõÃÕ/āōĀŌ/
-s/[ÿ'`‘’]/ʻ/
+
+# ‵ is U+2035; in tokelau jw.org
+LANG haw,sm,to,tvl,ty
+s/[ÿ'`‘’‵]/ʻ/
 
 LANG mda
 s/ε/ɛ/  # replace 03B5 with correct 025B
