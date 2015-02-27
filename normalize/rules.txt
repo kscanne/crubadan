@@ -153,6 +153,10 @@ s/z/ŋ/
 s/Z/Ŋ/
 s/∞/ʔ/
 
+LANG ee
+s/Ð/Ɖ/    # 00D0 should be 0189 (capital of 0256)
+s/Đ/Ɖ/    # 0110 should be 0189 (capital of 0256)
+
 LANG ga
 s/[\x{FFFF}\x{FFFE}\x{FEFF}]//
 s/([BbDdMmSs])’([AEIOUaeiouÁÉÍÓÚáéíóú])/$1'$2/
@@ -189,6 +193,9 @@ tr/ãõÃÕ/āōĀŌ/
 # ‵ is U+2035; in tokelau jw.org
 LANG haw,sm,to,tvl,ty
 s/[ÿ'`‘’‵]/ʻ/
+
+LANG ig
+s/(^|\P{Letter})([Nn])[’‘´`ʼ](?=\p{Latin})/$1$2'/
 
 LANG mda
 s/ε/ɛ/  # replace 03B5 with correct 025B

@@ -25,6 +25,8 @@ TEST cv twitter.com
 TEST cy twitter.com
 @elliwiw Dwi bron byth yn y mŵd an ninja bellach :(
 dwi'n trio i sgwennu blog fach yn y Gymraeg.
+TEST ee jw.org
+Ɖewohĩ wonye wò aƒelikawo kple dɔwɔhatiwo alo èdoa
 TEST en borel.slu.edu
 ‘I shouldn't have to tell you that.’
 TEST ga listserv.heanet.ie
@@ -40,6 +42,9 @@ TEST ha wikipedia.org
 da suka haɗa da 'ya'yanta uku
 TEST haw twitter.com
 RT @BMACouncil: ʻŌlelo noʻeau
+TEST ig twitter.com
+Otu: Suo aka odo n'ikwe
+Gi na onye no gi n'akuku onwere otu njirimara?
 TEST koi wikipedia.org
 шуӧны Верх Юсьва
 TEST mi twitter.com
