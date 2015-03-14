@@ -112,6 +112,10 @@ s/Ö/Ӧ/  # replace 00D6 with Cyrillic 04E6
 s/Ő/Ӧ/  # replace 0150 (dbl acute) with Cyrillic 04E6
 s/ă/ӑ/  # replace Latin 0103 with Cyrillic 04D1
 
+# TODO:
+# LANG ckb; see
+# https://github.com/sashther/ckb-conversion-tool/blob/master/convert.pl
+
 LANG ctu
 s/Λ/Ʌ/  # replace Grek 039B with 0245
 
