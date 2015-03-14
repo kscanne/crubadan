@@ -1,0 +1,65 @@
+# To do: Figure out capitalization
+LANG all
+s/ء/ˌ/g 
+s/◌/ˈ/g
+# Below: remove it all together
+s/◌//g 
+s/ا/ʾ/g
+s/عi/ʿ/g  
+# Capital for below is B
+s/ب /b/g
+# Capital for below is T
+s/ت /t/g
+# Capital for below is Ṯ
+s/ث /ṯ/g
+# Capital for below is Ǧ
+s/ج /ǧ/g
+# Capital for below is Ḥ
+s/ح /ḥ/g
+# Capital for below is H̱
+s/خ /ẖ/g
+# Capital for below is D
+s/د /d/g
+# Capital for below is Ḏ
+s/ذ /ḏ/g
+# Capital for below is R
+s/ر /r/g
+# Capital for below is Z
+s/ز /z/g
+# Capital for below is S
+s/س /s/g
+# Capital for below is Š
+s/ش /š/g
+# Capital for below is Ṣ
+s/ص /ṣ/g
+# Capital for below is Ḍ
+s/ض /ḍ/g
+# Capital for below is Ṭ
+s/ط /ṭ/g
+# Capital for below is Ẓ
+s/ظ /ẓ/g
+# Capital for below is Ġ
+s/غ /ġ/g
+# Capital for below is F
+s/ف /f/g
+# Capital for below is Q
+s/ق /q/g
+# Capital for below is K
+s/ك /k/g
+# Capital for below is L
+s/ل /l/g
+# Capital for below is M
+s/م /m/g
+# Capital for below is N
+s/ن /n/g
+# Capital for below is H
+s/ه /h/g
+# Capital for below is T̈
+s/ة /ẗ/g
+# Capital for below is W
+s/و /w/g
+# Capital for below is Y
+s/ي /y/g
+# Capital for below is Ỳ
+s/ى /ỳ/g
+
