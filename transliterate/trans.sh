@@ -1,7 +1,8 @@
 #!/bin/bash
 # Author: Matthew Meyer
 
-ALL_LEX=(latin cyrillic) # ALL_LEX is the scripts we have rules for
+ALL_LEX=(arabic cyrillic georgian greek hebrew indic japanese latin thai) 
+# ALL_LEX is the scripts we have rules for
 PREF=.user_pref.trans    # const file name for storing preferences
 RULES=~/.transliterate/  # const directory name for easy rule lookup
 
@@ -136,6 +137,7 @@ TRANS() {
       # search and replace to transliterate
       if [ "$SWITCH" = true ]
       then
+        x+="g"
         sed -i $x $OUT 
       fi
     fi
@@ -176,7 +178,8 @@ then
         exit 0
         ;;
       -L | --lex )
-        echo ${ALL_LEX[*]}
+        LEX=`echo $0 | sed 's/trans.sh/available.sh/'`
+        bash $LEX
         exit 0
         ;;
       -f | --from )
