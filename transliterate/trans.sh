@@ -19,15 +19,18 @@ USAGE() {
   echo "           This will show the available lexicographical options"
   echo "       -f | --from {LEX}"
   echo "           This is the lexicographic script from the transliterating file"
-  echo "           If this flag is not used, the default of Latin script will be used"
-  echo "           Or maybe we need to figure out how to make a good guess"
+  echo "           If this flag is not used, the default script of the user preferences"
+  echo "           will be used."
   echo "       -t | --to {LEX}"
   echo "           This is the lexicographic script that you want to transliterate to"
-  echo "           If this flag is not used, the default of Latin script will be used"
-  echo "           Or maybe we need to figure out how to make a good guess"
+  echo "           If this flag is not used, the default script of the user preferences"
+  echo "           will be used."
   echo "       -o | --out {FILE_NAME}"
   echo "           This is the file that the output is sent to"
   echo "           The default file name is IN_FILE_NAME.out"
+  echo "       -l | --lang {LANG_CODE}"
+  echo "           This code will be used for lnaguage specific transliterations. If no"
+  echo "           code is given, the generic transliteration will be used."
   echo ""
   echo "Flags to change the local (directories) settings:"
   echo "       --set-from {PREF}"
@@ -158,9 +161,9 @@ USER_PREF() {
   if [ ! -f $FILE ]
   then
     touch $FILE
-    echo "F:" >> $FILE
-    echo "T:" >> $FILE
-    echo "L:" >> $FILE
+    echo "F:latin" >> $FILE
+    echo "T:latin" >> $FILE
+    echo "L:all" >> $FILE
   fi
   sed -i "s/^$2.*$/$2:$1/" $FILE
 }
