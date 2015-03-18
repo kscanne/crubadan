@@ -1,3 +1,20 @@
+# Belarusian
+LANG be
+s/Ё/Yo/
+s/ё/yo/
+s/Ў/U`/
+s/ў/u`/
+s/Ы/Y`/
+s/ы/y`/
+s/Э/E`/
+s/э/e`/
+
+# Bulgarian
+s/Щ/Sht/
+s/щ/sht/
+s/Ъ/A`/
+s/ъ/a`/
+
 # Macedonian
 LANG mk
 s/Ѓ/G`/
@@ -14,7 +31,34 @@ s/Њ/N`/
 s/њ/n`/
 s/Џ/Dh/
 s/џ/dh/
-################################
+
+# Russian
+LANG ru
+s/Ё/Yo/
+s/ё/yo/
+s/Щ/Shh/
+s/щ/shh/
+s/Ъ/``/
+s/ъ/``/
+s/Ы/Y`/
+s/ы/y`/
+s/Э/E`/
+s/э/e`/
+
+# Ukrainian
+LANG uk
+s/Ґ/G`/
+s/ґ/g`/
+s/Є/Ye/
+s/є/ye/
+s/И/Y`/
+s/и/y`/
+s/Ї/Yi/
+s/ї/yi/
+s/Щ/Shh/
+s/щ/shh/
+
+# Individual first, then generic
 LANG all
 s/А/A/
 s/а/a/
@@ -222,8 +266,8 @@ s/Ҳ/H̦/
 s/ҳ/h̦/
 s/Ҳ/Ḩ/
 s/ҳ/ḩ/
-s/Ц/C/
-s/ц/c/
+s/Ц/Cz/
+s/ц/cz/
 s/Ҵ/C̄/
 s/ҵ/c̄/
 s/Џ/D̂/
@@ -285,3 +329,4 @@ s/ѵ/ỳ/
 s/Ӏ/‡/
 s/’/`/
 s/ˮ/¨/
+s/№/#/
