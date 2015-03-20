@@ -1,0 +1,34 @@
+Facebook Group Crawler Usage Guide
+
+Requirements:
+    Installing Python Facebook-SDK Package
+        1) Open a terminal and enter the command:
+
+                sudo pip install facebook-sdk
+
+            For more information go to the following address:
+                https://facebook-sdk.readthedocs.org/en/latest/index.html
+
+    Access Token
+        1) Go to the Facebook Graph API Explorer at the following address:
+            https://developers.facebook.com/tools/explorer/
+        2) Log into Facebook using your account
+        3) After being redirected, click the "Get Access Token" button
+        4) A window will pop up with check boxes for different permission requests. Check "user_groups" and press the "Okay" button at the bottom of the window
+        5) The Access Token will be generated and will be usable for 1 to 2 hours before a new token must be generated
+
+    Group ID
+        1) Go to the page of the group that is to be crawled
+        2) The URL should be something like:
+            https://www.facebook.com/groups/000000000000000/
+        3) The ID is the number in the URL that is in place of the 0's
+
+Using the Crawler:
+    To use the Facebook Crawler you must enter an Access Token, a group ID, and a number to specify how many posts you want to crawl. This information can be provided using command line arguments using the form:
+
+        FacebookCrawler.py [Access Token] [Group ID] [Number of Posts]
+
+    The required information can also be provided as responses to queries in the program. If no command-line arguments are provided, the program will first ask for you to enter your Access Token, then the Group ID, then the number of posts to crawl.
+
+
+**Note that there is no limit to the number of posts that can be crawled. However, If a large number is provided (i.e. 3000), the program can take a substantial amount of time to complete the crawl.
