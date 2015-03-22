@@ -156,10 +156,8 @@ TRANS() {
 USER_PREF() {
   if [ $3 ]
   then
-    echo "GLOBAL"
     FILE=~/$PREF
   else
-    echo "LOCAL"
     FILE=`pwd`/$PREF
   fi
   
