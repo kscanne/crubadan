@@ -1,0 +1,118 @@
+# Western Armenian
+LANG western
+s/Բ/P/
+s/բ/p/
+s/Գ/K/
+s/գ/k/
+s/Դ/T/
+s/դ/t/
+s/Ծ/Dz/
+s/ծ/dz/
+s/Կ/G/
+s/կ/g/
+s/Ձ/Ts/
+s/ձ/ts/
+s/Ճ/J/
+s/ճ/j/
+s/Պ/B/
+s/պ/b/
+s/Ջ/Ch/
+s/ջ/ch/
+s/Տ/D/
+s/տ/d/
+
+# Classical and Eastern Armenian
+LANG all
+s/Ա/A/
+s/ա/a/
+s/Բ/B/
+s/բ/b/
+s/Գ/G/
+s/գ/g/
+s/Դ/D/
+s/դ/d/
+s/Ե/E/
+s/ե/e/
+
+# only when Ե or ե is in a name and followed by a vowel
+# s/Ե/Y/
+# s/ե/y/
+
+s/Զ/Z/
+s/զ/z/
+s/Է/Ē/
+s/է/ē/
+s/Ը/Ě/
+s/ը/ě/
+s/Թ/Tʻ/
+s/թ/tʻ/
+s/Ժ/Zh/
+s/ժ/zh/
+s/Ի/I/
+s/ի/i/
+s/Լ/L/
+s/լ/l/
+s/Խ/Kh/
+s/խ/kh/
+s/Ծ/Ts/ [Dz] (see Notes 1
+s/ծ/ts/ [dz] (see Notes 1
+s/Կ/K/ [G] (see Note 1)
+s/կ/k/ [g] (see Note 1)
+s/Հ/H/
+s/հ/h/
+s/Ձ/Dz/ [Ts] (see Notes 1
+s/ձ/dz/ [ts] (see Notes 1
+s/Ղ/Gh/ 
+s/ղ/gh/ 
+s/Ճ/Ch/ [J] (see Note 1)
+s/ճ/ch/ [j] (see Note 1)
+s/Մ/M/
+s/մ/m/
+
+s/Յ/Y/
+s/յ/y/
+# The other values are used when letter is in initial position or stem in compound
+# s/Յ/H/
+# s/յ/h/
+
+s/Ն/N/
+s/ն/n/
+s/Շ/Sh/
+s/շ/sh/
+s/Ո/O/
+s/ո/o/
+s/Չ/Chʻ/
+s/չ/chʻ/
+s/Պ/P/
+s/պ/p/
+s/Ջ/J/
+s/ջ/j/
+s/Ռ/Ṛ/
+s/ռ/ṛ/
+s/Ս/S/
+s/ս/s/
+s/Վ/V/
+s/վ/v/
+s/Տ/T/
+s/տ/t/
+s/Ր/R/
+s/ր/r/
+s/Ց/Tsʻ/
+s/ց/tsʻ/
+s/Ւ/W/
+s/ւ/w/
+s/Ո/ւU/
+s/ո/ւu/
+s/Փ/Pʻ/
+s/փ/pʻ/
+s/Ք/Kʻ/
+s/ք/kʻ/
+s/Եւ/Ew/
+s/եւ/ew/
+s/Եվ/Ev/
+s/եվ/ev/
+s/Օ/Ō/
+s/օ/ō/
+s/Ֆ/F/
+s/ֆ/f/
+

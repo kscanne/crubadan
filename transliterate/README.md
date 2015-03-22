@@ -21,6 +21,9 @@ A collection of tests to be sure that the rules we have work.
 rules/
 ---------
 A collection of rules to help transliterate. Currently there are only a couple of romanizations.
+Sources:    
+http://www.loc.gov/catdir/cpso/roman.html    
+http://en.wikipedia.org/wiki/List_of_ISO_romanizations    
 
 TODO:
 ---------
