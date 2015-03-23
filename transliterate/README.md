@@ -21,8 +21,14 @@ A collection of tests to be sure that the rules we have work.
 rules/
 ---------
 A collection of rules to help transliterate. Currently there are only a couple of romanizations.
+Sources:    
+http://www.loc.gov/catdir/cpso/roman.html    
+http://en.wikipedia.org/wiki/List_of_ISO_romanizations    
 
 TODO:
 ---------
 * add more rules
+* add different language switches for scripts
 * add tests for every rule set
+* make it read from stdin to stdout by default
+

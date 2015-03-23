@@ -1,65 +1,100 @@
-# To do: Figure out capitalization
+# Azerbaijani
+LANG az
+
+s/ا//
+s/ب/b/
+s/پ/p/
+s/ت/t/
+s/ث/s/
+s/ج/c/
+s/چ/ç/
+s/ح/ḥ/
+s/خ/x/
+s/د/d/
+s/ذ/z/
+s/ر/r/
+s/ز/z/
+s/ژ/j/
+s/س/s/
+s/ش/ş/
+s/ص/ṣ/
+s/ض/z̤/
+s/ط/ṭ/
+s/ظ/ẓ/
+s/ع/‘/ 
+s/غ/ğ/
+s/ف/f/
+s/ق/q/
+s/ك/k/
+s/گ/g/
+s/ل/l/
+s/م/m/
+s/ن/n/
+s/و/v/
+s/ه/h/
+s/ى/y/
+
 LANG all
-s/ء/ˌ/g 
-s/◌/ˈ/g
+s/ء/ˌ/
+s/◌/ˈ/
 # Below: remove it all together
-s/◌//g 
-s/ا/ʾ/g
-s/عi/ʿ/g  
+s/◌//
+s/ا/ʾ/
+s/عi/ʿ/
 # Capital for below is B
-s/ب /b/g
+s/ب /b/
 # Capital for below is T
-s/ت /t/g
+s/ت /t/
 # Capital for below is Ṯ
-s/ث /ṯ/g
+s/ث /ṯ/
 # Capital for below is Ǧ
-s/ج /ǧ/g
+s/ج /ǧ/
 # Capital for below is Ḥ
-s/ح /ḥ/g
+s/ح /ḥ/
 # Capital for below is H̱
-s/خ /ẖ/g
+s/خ /ẖ/
 # Capital for below is D
-s/د /d/g
+s/د /d/
 # Capital for below is Ḏ
-s/ذ /ḏ/g
+s/ذ /ḏ/
 # Capital for below is R
-s/ر /r/g
+s/ر /r/
 # Capital for below is Z
-s/ز /z/g
+s/ز /z/
 # Capital for below is S
-s/س /s/g
+s/س /s/
 # Capital for below is Š
-s/ش /š/g
+s/ش /š/
 # Capital for below is Ṣ
-s/ص /ṣ/g
+s/ص /ṣ/
 # Capital for below is Ḍ
-s/ض /ḍ/g
+s/ض /ḍ/
 # Capital for below is Ṭ
-s/ط /ṭ/g
+s/ط /ṭ/
 # Capital for below is Ẓ
-s/ظ /ẓ/g
+s/ظ /ẓ/
 # Capital for below is Ġ
-s/غ /ġ/g
+s/غ /ġ/
 # Capital for below is F
-s/ف /f/g
+s/ف /f/
 # Capital for below is Q
-s/ق /q/g
+s/ق /q/
 # Capital for below is K
-s/ك /k/g
+s/ك /k/
 # Capital for below is L
-s/ل /l/g
+s/ل /l/
 # Capital for below is M
-s/م /m/g
+s/م /m/
 # Capital for below is N
-s/ن /n/g
+s/ن /n/
 # Capital for below is H
-s/ه /h/g
+s/ه /h/
 # Capital for below is T̈
-s/ة /ẗ/g
+s/ة /ẗ/
 # Capital for below is W
-s/و /w/g
+s/و /w/
 # Capital for below is Y
-s/ي /y/g
+s/ي /y/
 # Capital for below is Ỳ
-s/ى /ỳ/g
+s/ى /ỳ/
 
