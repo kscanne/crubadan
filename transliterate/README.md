@@ -30,5 +30,4 @@ TODO:
 * add more rules
 * add different language switches for scripts
 * add tests for every rule set
-* make it read from stdin to stdout by default
 

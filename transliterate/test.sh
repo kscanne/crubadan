@@ -19,11 +19,7 @@
 #     into the tests directory. If there is output when this script is run, it fails
 
 
-TEST_FILES=`ls tests/ | sed 's/\..*$//' | sort | uniq`
-echo "Running tests for: "
-echo $TEST_FILES
-
-echo $TEST_FILES | 
+ls tests/ | sed 's/\..*$//' | sort | uniq | 
 while read t
 do
   F=`echo $t | sed 's/-.*//'`
