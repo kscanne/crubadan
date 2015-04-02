@@ -1,6 +1,6 @@
 # first, many Latin languages should normalize generic interior apostrophes
 # U+0060, U+00B4, U+2018, U+2019, U+02BC (last common in Oromo corpus)
-LANG br,br-x-falhuneg,br-x-unified,ca,en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,gd,gv,ha,om,rw,sco
+LANG br,br-x-falhuneg,br-x-unified,ca,en,en-AU,en-BW,en-CA,en-GB,en-HK,en-IE,en-IN,en-JM,en-KE,en-NG,en-NZ,en-PH,en-SG,en-TT,en-US,en-ZA,gd,gv,ha,om,rw,sco,tl
 s/(?<=\p{Latin})[`´’‘ʼ](?=\p{Latin})/'/
 
 LANG af
