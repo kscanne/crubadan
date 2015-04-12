@@ -143,7 +143,7 @@ CHECK() {
 
   # check for errors
   if [ "$BAD" != "" ]
-  then # make a copy so we dont mess us $in
+  then 
     echo -e $BAD
     exit 1
   fi
@@ -176,7 +176,7 @@ TRANS() {
 
   while read line
   do
-    line=`echo $line | sed $PIPE`
+    line=`echo $line | sed "$PIPE"`
     echo $line >> ${OUT:-/dev/stdout}
   done < ${IN:-/dev/stdin}
 }
