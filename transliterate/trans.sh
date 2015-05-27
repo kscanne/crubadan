@@ -1,7 +1,37 @@
 #!/bin/bash
 # Author: Matthew Meyer
 
-ALL_LEX=(arabic cyrillic georgian greek hebrew indic japanese latin thai) 
+ALL_LEX=( amharic 
+          arabic
+          armenian
+          assamese
+          bengali
+          bopomofo
+          canadian_aboriginal
+          cherokee
+          cjk
+          coptic
+          cyrillic
+          devanagari
+          ethiopic 
+          georgian 
+          greek 
+          hebrew 
+          hiragana 
+          indic 
+          japanese 
+          all
+          katakana 
+          khmer 
+          latin
+          mongolian 
+          myanmar 
+          ogham 
+          runic 
+          syriac 
+          thaana 
+          thai
+          )
 # ALL_LEX is the scripts we have rules for
 PREF=.user_pref.trans    # const file name for storing preferences
 RULES=~/.transliterate/  # const directory name for easy rule lookup
@@ -113,7 +143,7 @@ CHECK() {
 
   # check for errors
   if [ "$BAD" != "" ]
-  then # make a copy so we dont mess us $in
+  then 
     echo -e $BAD
     exit 1
   fi
@@ -126,8 +156,7 @@ CHECK() {
 # File to File
 TRANS() {
   SED=
-  PIPE="-e "
-  PIPE+=`cat $RULES | sed 's/#.*$//' | sed 's/ +$//' | sed '/^$/d' | (
+  PIPE=`cat $RULES | sed 's/#.*$//' | sed 's/ +$//' | sed '/^$/d' | (
   while read x # comments and empty lines already removed from sed commands
   do
     if [[ $x =~ ^LANG.* ]]
@@ -137,8 +166,8 @@ TRANS() {
       # search and replace to transliterate
       if [ "$SWITCH" = true ]
       then
-        x+="g"
-        SED+=" -e $x"
+        x+="g;"
+        SED+=$x
       fi
     fi
   done
@@ -147,7 +176,7 @@ TRANS() {
 
   while read line
   do
-    line=`echo $line | sed $PIPE`
+    line=`echo $line | sed "$PIPE"`
     echo $line >> ${OUT:-/dev/stdout}
   done < ${IN:-/dev/stdin}
 }

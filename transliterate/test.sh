@@ -18,12 +18,14 @@
 #         cyrillic-latin-ru.expected-out
 #     into the tests directory. If there is output when this script is run, it fails
 
-
-TEST_FILES=`ls tests/ | sed 's/\..*$//' | sort | uniq`
-echo "Running tests for: "
-echo $TEST_FILES
-
-echo $TEST_FILES | 
+# clean before
+rm tests/*.out
+FLAG=$1
+if [ -z $1 ]
+then
+  FLAG="-u"
+fi
+ls tests/ | sed 's/\..*$//' | sort | uniq | 
 while read t
 do
   F=`echo $t | sed 's/-.*//'`
@@ -32,8 +34,6 @@ do
 
   bash trans.sh -i tests/$t.in -o tests/$t.out -l $L -f $F -t $T 
   
-  diff -u tests/$t.expected-out tests/$t.out
+  diff $FLAG tests/$t.expected-out tests/$t.out | colordiff
 done
-
-
 

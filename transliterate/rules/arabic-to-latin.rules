@@ -1,100 +1,215 @@
-# Azerbaijani
-LANG az
+# vowels are harder
+LANG all 
+s/؀/,/
 
-s/ا//
+s/ؐ/;/
+
+s/ؑ/?/
+s/ؠ/a/
+s/ء/a/ # eh?
+s/آ/'/ # beginning
+
+
+s/أ/a/ # a sound
+s/ؤ/oo/
+s/إ/a/ # e sound
+s/ئ//
+s/ا/a/
 s/ب/b/
-s/پ/p/
+s/ة/t/
 s/ت/t/
-s/ث/s/
-s/ج/c/
-s/چ/ç/
-s/ح/ḥ/
-s/خ/x/
+s/ث/th/
+s/ج/j/
+s/ح/H/
+s/خ/kh/
 s/د/d/
-s/ذ/z/
+s/ذ/th/
 s/ر/r/
 s/ز/z/
-s/ژ/j/
 s/س/s/
-s/ش/ş/
-s/ص/ṣ/
-s/ض/z̤/
-s/ط/ṭ/
-s/ظ/ẓ/
-s/ع/‘/ 
-s/غ/ğ/
+s/ش/sh/
+s/ص/S/ # capital is harder pronunciation
+s/ض/D/
+s/ط/T/
+s/ظ/Z/
+s/ع/`/ #chat 3 - look up better rule
+s/غ/Gh/
+s/ـ//
 s/ف/f/
-s/ق/q/
+s/ق/q/ # Lebanon '
 s/ك/k/
-s/گ/g/
 s/ل/l/
 s/م/m/
 s/ن/n/
-s/و/v/
-s/ه/h/
-s/ى/y/
-
-LANG all
-s/ء/ˌ/
-s/◌/ˈ/
-# Below: remove it all together
-s/◌//
-s/ا/ʾ/
-s/عi/ʿ/
-# Capital for below is B
-s/ب /b/
-# Capital for below is T
-s/ت /t/
-# Capital for below is Ṯ
-s/ث /ṯ/
-# Capital for below is Ǧ
-s/ج /ǧ/
-# Capital for below is Ḥ
-s/ح /ḥ/
-# Capital for below is H̱
-s/خ /ẖ/
-# Capital for below is D
-s/د /d/
-# Capital for below is Ḏ
-s/ذ /ḏ/
-# Capital for below is R
-s/ر /r/
-# Capital for below is Z
-s/ز /z/
-# Capital for below is S
-s/س /s/
-# Capital for below is Š
-s/ش /š/
-# Capital for below is Ṣ
-s/ص /ṣ/
-# Capital for below is Ḍ
-s/ض /ḍ/
-# Capital for below is Ṭ
-s/ط /ṭ/
-# Capital for below is Ẓ
-s/ظ /ẓ/
-# Capital for below is Ġ
-s/غ /ġ/
-# Capital for below is F
-s/ف /f/
-# Capital for below is Q
-s/ق /q/
-# Capital for below is K
-s/ك /k/
-# Capital for below is L
-s/ل /l/
-# Capital for below is M
-s/م /m/
-# Capital for below is N
-s/ن /n/
-# Capital for below is H
-s/ه /h/
-# Capital for below is T̈
-s/ة /ẗ/
-# Capital for below is W
-s/و /w/
-# Capital for below is Y
-s/ي /y/
-# Capital for below is Ỳ
-s/ى /ỳ/
-
+s/ه/h/ # chat 7 - h is "exhale"
+s/و/w/ # oo or u sound or w depending on word
+s/ى/a/
+s/ي/y/ # ai ei 
+s/ً/an/
+s/ٌ/un/
+s/ٍ/in/
+s/َ/a/ # chat ignored
+s/ُ/u/ #
+s/ِ /i/ #
+s/ّ/W/ # make double 
+s/ْ// # makes short
+s/ٓ// # laision
+s/ٔ/'a/
+s/ٕ/'i/
+s/٠/0/
+s/١/1/
+s/٢/2/
+s/٣/3/
+s/٤/4/
+s/٥/5/
+s/٦/6/
+s/٧/7/
+s/٨/8/
+s/٩/9/
+s/٪/%/
+s/٫/./
+s/٬/,/
+s/٭/*/
+s/ٰ//
+s/ٱ/'/
+s/ٲ//
+s/ٳ/,/
+s/ٴ//
+s/ٵ//
+s/ٶ//
+s/ٷ/,/
+s/ٸ/w/
+s/ٹ// # Farsi or Urdu with several dots
+s/ٺ/,/
+s/ٻ/y/
+s/ټ/tt/
+s/ٽ/tth/
+s/پ/b/
+s/ٿ/t/
+s/ڀ/T/
+s/ځ/p/
+s/ڂ/th/
+s/ڀ/bh/
+s/ځ/'h/
+s/ڂ/H/
+s/ڃ/ny/
+s/ڄ/dy/
+s/څ/H/
+s/چ/ch/
+s/ڇ/cch/
+s/ڈ/dd/
+s/ډ/D/
+s/ڊ/D/
+s/ڋ/Dt/
+s/ڌ/dh/
+s/ڍ/ddh/
+s/ڎ/d/
+s/ڏ/D/
+s/ڐ/D/
+s/ڑ/rr/
+s/ڒ/R/
+s/ړ/R/
+s/ڔ/R/
+s/ڕ/R/
+s/ږ/R/
+s/ڗ/R/
+s/ژ/j/
+s/ڙ/R/
+s/ښ/S/
+s/ڛ/S/
+s/ڜ/S/
+s/ڝ/S/
+s/ڞ/S/
+s/ڟ/T/
+s/ڠ/GH/
+s/ڡ/F/
+s/ڢ/F/
+s/ڣ/F/
+s/ڤ/v/
+s/ڥ/f/
+s/ڦ/ph/
+s/ڧ/Q/
+s/ڨ/Q/
+s/ک/kh/
+s/ڪ/k/
+s/ګ/K/
+s/ڬ/K/
+s/ڭ/ng/
+s/ڮ/K/
+s/گ/g/
+s/ڰ/G/
+s/ڱ/N/
+s/ڲ/G/
+s/ڳ/G/
+s/ڴ/G/
+s/ڵ/L/
+s/ڶ/L/
+s/ڷ/L/
+s/ڸ/L/
+s/ڹ/N/
+s/ں/N/
+s/ڻ/N/
+s/ڼ/N/
+s/ڽ/N/
+s/ھ/h/
+s/ڿ/Ch/
+s/ۀ/hy/
+s/ہ/h/
+s/ۂ/H/
+s/ۃ/@/
+s/ۄ/W/
+s/ۅ/oe/
+s/ۆ/oe/
+s/ۇ/u/
+s/ۈ/yu/
+s/ۉ/yu/
+s/ۊ/W/
+s/ۋ/v/
+s/ی/y/
+s/ۍ/Y/
+s/ێ/Y/
+s/ۏ/W/
+s/ې//
+s/ۑ//
+s/ے/y/
+s/ۓ/y'/
+s/۔/./
+s/ە/ae/
+s/ۖ//
+s/ۗ//
+s/ۘ//
+s/ۙ//
+s/ۚ//
+s/ۛ//
+s/ۜ//
+s/۝/@/
+s/۟//
+s/۠//
+s/ۡ//
+s/ۢ//
+s/ۣ//
+s/ۤ//
+s/ۥ//
+s/ۦ//
+s/ۧ//
+s/ۨ//
+s/۩/^/
+s/۪//
+s/۫//
+s/۬//
+s/ۭ//
+s/۰/0/
+s/۱/1/
+s/۲/2/
+s/۳/3/
+s/۴/4/
+s/۵/5/
+s/۶/6/ # 6 5 and 4 are different from above hindi numbers
+s/۷/7/
+s/۸/8/
+s/۹/9/
+s/ۺ/Sh/
+s/ۻ/D/
+s/ۼ/Gh/
+s/۽/&/
+s/۾/+m/

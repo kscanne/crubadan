@@ -1,0 +1,30 @@
+LANG all
+s/ᚁ/B/
+s/ᚂ/L/
+s/ᚃ/F/
+s/ᚄ/S/
+s/ᚅ/N/
+s/ᚆ/H/
+s/ᚇ/D/
+s/ᚈ/T/
+s/ᚉ/C/
+s/ᚊ/Q/
+s/ᚋ/M/
+s/ᚌ/G/
+s/ᚍ/NG/
+s/ᚎ/Z/
+s/ᚏ/R/
+s/ᚐ/A/
+s/ᚑ/O/
+s/ᚒ/U/
+s/ᚓ/E/
+s/ᚔ/I/
+s/ᚕ/CH/
+s/ᚖ/TH/
+s/ᚗ/PH/
+s/ᚘ/P/
+s/ᚙ/X/
+s/ᚚ/P/
+s/ / /
+s/᚛// # optional '<' # this implies the beginning of a line
+s/᚜// # optional '>' implies end of line

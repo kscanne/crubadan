@@ -1,0 +1,82 @@
+LANG all
+s/ᚠ/F/
+s/ᚡ/V/
+s/ᚢ/U/
+s/ᚣ/YR/
+s/ᚤ/Y/
+s/ᚥ/W/
+s/ᚦ/Þ/ # þ is a less popular variation ("th" sound)
+s/ᚧ/TH/
+s/ᚨ/A/
+s/ᚩ/O/
+s/ᚪ/AC/
+s/ᚫ/AE/
+s/ᚬ/O/
+s/ᚭ/O/
+s/ᚮ/O/
+s/ᚯ/OE/
+s/ᚰ/ON/
+s/ᚱ/R/
+s/ᚲ/K/
+s/ᚳ/C/
+s/ᚴ/K/
+s/ᚵ/G/
+s/ᚶ/NG/
+s/ᚷ/G/
+s/ᚸ/G/
+s/ᚹ/W/
+s/ᚺ/H/
+s/ᚻ/H/
+s/ᚼ/H/
+s/ᚽ/H/
+s/ᚾ/N/
+s/ᚿ/N/
+s/ᛀ/N/
+s/ᛁ/I/
+s/ᛂ/E/
+s/ᛃ/J/
+s/ᛄ/G/
+s/ᛅ/A/
+s/ᛆ/A/
+s/ᛇ/ï/ # MULTIPLE æ OR EO
+s/ᛈ/P/
+s/ᛉ/Z/
+s/ᛊ/S/
+s/ᛋ/S/
+s/ᛌ/S/
+s/ᛍ/C/
+s/ᛎ/Z/
+s/ᛏ/T/
+s/ᛐ/T/
+s/ᛑ/D/
+s/ᛒ/B/
+s/ᛓ/B/
+s/ᛔ/P/
+s/ᛕ/P/
+s/ᛖ/E/
+s/ᛗ/M/
+s/ᛘ/M/
+s/ᛙ/M/
+s/ᛚ/L/
+s/ᛛ/L/
+s/ᛜ/NG/ # OR ŋ
+s/ᛝ/ŋ/ #  NG
+s/ᛞ/D/
+s/ᛟ/O/
+s/ᛠ/EAR/
+s/ᛡ/IOR/
+s/ᛢ/QU/
+s/ᛣ/QU/
+s/ᛤ/QU/
+s/ᛥ/S/
+s/ᛦ/YR/
+s/ᛧ/YR/
+s/ᛨ/YR/
+s/ᛩ/Q/
+s/ᛪ/X/
+s/᛫/./
+s/᛬/ : /
+s/᛭/ + /
+s/ᛮ/17/
+s/ᛯ/18/
+s/ᛰ/19/
