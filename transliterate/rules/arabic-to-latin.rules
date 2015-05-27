@@ -1,56 +1,61 @@
-LANGall
+# vowels are harder
+LANG all 
 s/؀/,/
+
 s/ؐ/;/
+
 s/ؑ/?/
-s/ؠ//
-s/ء/a/
-s/آ/'/
-s/أ/w/
-s/ؤ/,/
-s/إ/,/
+s/ؠ/a/
+s/ء/a/ # eh?
+s/آ/'/ # beginning
+
+
+s/أ/a/ # a sound
+s/ؤ/oo/
+s/إ/a/ # e sound
 s/ئ//
-s/ا//
+s/ا/a/
 s/ب/b/
-s/ة/@/
+s/ة/t/
 s/ت/t/
 s/ث/th/
 s/ج/j/
 s/ح/H/
 s/خ/kh/
 s/د/d/
-s/ذ/dh/
+s/ذ/th/
 s/ر/r/
 s/ز/z/
 s/س/s/
 s/ش/sh/
-s/ص/S/
+s/ص/S/ # capital is harder pronunciation
 s/ض/D/
 s/ط/T/
 s/ظ/Z/
-s/ع/`/
-s/غ/G/
+s/ع/`/ #chat 3 - look up better rule
+s/غ/Gh/
 s/ـ//
 s/ف/f/
-s/ق/q/
+s/ق/q/ # Lebanon '
 s/ك/k/
 s/ل/l/
 s/م/m/
 s/ن/n/
-s/ه/h/
-s/و/w/
-s/ى/~/
-s/ي/y/
+s/ه/h/ # chat 7 - h is "exhale"
+s/و/w/ # oo or u sound or w depending on word
+s/ى/a/
+s/ي/y/ # ai ei 
 s/ً/an/
 s/ٌ/un/
 s/ٍ/in/
-s/َ/a/
-s/ُ/u/
-s/ِ/i/
-s/ّ/W/
-s/ْ//
-s/ٓ//
-s/ٔ/'/
-s/ٕ//
+s/َ/a/ # chat ignored
+s/ُ/u/ #
+s/ِ /i/ #
+s/ّ/W/ # make double 
+s/ْ// # makes short
+s/ٓ// # laision
+s/ٔ/'a/
+s/ٕ/'i/
 s/٠/0/
 s/١/1/
 s/٢/2/
@@ -74,7 +79,7 @@ s/ٵ//
 s/ٶ//
 s/ٷ/,/
 s/ٸ/w/
-s/ٹ//
+s/ٹ// # Farsi or Urdu with several dots
 s/ٺ/,/
 s/ٻ/y/
 s/ټ/tt/
@@ -199,7 +204,7 @@ s/۲/2/
 s/۳/3/
 s/۴/4/
 s/۵/5/
-s/۶/6/
+s/۶/6/ # 6 5 and 4 are different from above hindi numbers
 s/۷/7/
 s/۸/8/
 s/۹/9/
