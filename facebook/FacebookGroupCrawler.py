@@ -1,8 +1,7 @@
 #!/usr/bin/python
 
 import facebook
-import re
-import urllib2
+import requests
 import sys
 
 try:
@@ -32,23 +31,25 @@ else:
     args = {'fields' : 'id', 'limit' : '11'}
 feed = graph.get_object(groupID + "/feed", **args)
 
-# Extract each post's ID and store in the list "IDs"
-IDs = re.findall(r"\'id\': \'([\d_]+)\'", str(feed))
-while len(IDs) < numOfPosts:
-    feed = re.sub(r'[\\]', r'', str(feed))
-    # Extract the URL of the next page to crawl 
-    newURL = re.findall(r".next.: ?u?.([\w||\?||&||/||\.||:||=||_]+).", str(feed))
+# Retrieve each post's ID and store in the list "IDs"
+IDs = []
+for post in feed['data']:
+    IDs.append(str(post['id']))
 
-    # Open and Read the URL of the next page to crawl
+while len(IDs) < numOfPosts:
+    print str(len(IDs))
+
+    # Retrieve the next page to crawl
     try:
-        response = urllib2.urlopen(str(newURL[0]))
+        feed = requests.get(feed['paging']['next']).json()
     except IndexError:
         maxPosts = True
         break
-    feed = response.read()
 
-    # Extract the IDs of the posts on the new page and store in the temp list "moreIDs"
-    moreIDs = re.findall(r".id.: ?.([\d_]+).", str(feed))
+    # Retrieve the IDs of the posts on the new page
+    moreIDs = []
+    for post in feed['data']:
+        moreIDs.append(str(post['id']))
     counter = 0
 
     # Append the new IDs from "moreIDs" onto the complete ID list, "IDs"
@@ -63,11 +64,8 @@ for ID in IDs:
     try:
         post = graph.get_object(id = str(ID))
     except:
-        print "<post>\n<id>" + str(ID) + "</id>\n<author></author>\n<message></message>\n</post>"
+        print "<post>\n<id>" + str(ID) + "</id>\n<author></author>\n<timestamp></timestamp>\n<message></message>\n<comments></comments>\n</post>"
         continue
-
-    # Extract "name" from the "from" field
-    name = re.search(r".name.: ?u?.(?P<name>.*?).}", str(post['from']))
 
     # Print data in XML Format
     print "<post>"
@@ -75,7 +73,7 @@ for ID in IDs:
 
     # Check if the post has an author, if not leave the tags empty
     try:
-        print "<author>" + unicode(name.group('name'), 'unicode-escape') + "</author>"
+        print "<author>" + post['from']['name'] + "</author>"
     except:
         print "<author></author>"
 
@@ -86,6 +84,18 @@ for ID in IDs:
         print "<message>" + post['message'] + "</message>"
     except:
         print "<message></message>"
+
+    # COMMENTS
+    args = {'fields' : 'id,created_time,from,message', 'limit' : '11'}
+    comments = graph.get_object(ID + "/comments", **args)
+
+    for comment in comments['data']:
+        print "<comment>"
+        print "<id>" + comment['id'] + "</id>"
+        print "<author>" + comment['from']['name'] + "</author>"
+        print "<timestamp>" + comment['created_time'] + "</timestamp>"
+        print "<message>" + comment['message'] + "</message>"
+        print "</comment>"
 
     print "</post>"
 
