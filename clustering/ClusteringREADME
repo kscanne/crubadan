@@ -1,0 +1,35 @@
+The "clustering" files provide functions in python useful for performing cluster 
+analysis on large collections of documents.
+
+                          --DocumentDataSet--
+This is the primary computation file, it is used for performing k-means cluster
+analysis of a given collection of documents, along with the more basic
+intermediary functions such as dist and mean. In addition, the kAnalysis method
+iterates over a range of k and performs clustering trials, then returning
+a graph of k vs. the average distance from a cluster center/mean.
+
+There are two classes here: dataProfile and profileDataSet. dataProfile
+functions as the wrapper for individual documents, methods from this class can
+compare documents as is useful. An instance of profileDataSet is composed of
+instances of dataProfile; it is how we store a collection of documents. 
+profileDataSet is the class that allows for clustering analysis.
+
+Usage notes:
+
+  The loadCurrentDir method is the easiest way to load a collection
+  of files into their proper formats, especially if they are already arranged
+  in their own directory. Just place this file in that directory, then 
+  instantiate a profileDataSet and use loadCurrentDir via IDE or script.
+
+  There are several vectorization protocols available as helper functions, but
+  note that all additional vectorizations must be added also to the "vectorizefile" 
+  function.
+  
+  The graphical plotting done in kAnalysis requires extra libraries not
+  native to standard python interpreters, make sure these are available
+  before attempting to use the file.
+
+                          --AccuracyAnalysis--
+This file may be useful for error checking on an analysis a set with a known
+cluster assignment already available. In this form it will work for up to 
+k = 9 with the proper format. For k > 9, some tweaks will be necessary.
